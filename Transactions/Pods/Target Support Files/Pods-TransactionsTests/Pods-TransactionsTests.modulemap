@@ -1,0 +1,6 @@
+framework module Pods_TransactionsTests {
+  umbrella header "Pods-TransactionsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
