@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		010088001D80407500F1D4F8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010087FF1D80407500F1D4F8 /* Network.swift */; };
+		010088001D80407500F1D4F8 /* TransactionsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010087FF1D80407500F1D4F8 /* TransactionsNetwork.swift */; };
 		011F259E1D8028DE00573871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F259D1D8028DE00573871 /* AppDelegate.swift */; };
-		011F25A01D8028DE00573871 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F259F1D8028DE00573871 /* TransactionsViewController.swift */; };
+		011F25A01D8028DE00573871 /* TransactionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F259F1D8028DE00573871 /* TransactionsListViewController.swift */; };
 		011F25A31D8028DE00573871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011F25A11D8028DE00573871 /* Main.storyboard */; };
 		011F25A51D8028DE00573871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011F25A41D8028DE00573871 /* Assets.xcassets */; };
 		011F25A81D8028DE00573871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011F25A61D8028DE00573871 /* LaunchScreen.storyboard */; };
 		011F25B31D8028DE00573871 /* TransactionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F25B21D8028DE00573871 /* TransactionsTests.swift */; };
+		0194032C1D80433600204A75 /* TransactionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194032B1D80433600204A75 /* TransactionsService.swift */; };
+		0194032E1D8043F000204A75 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194032D1D8043F000204A75 /* Transaction.swift */; };
 		3F0AE2372CF0B069FBEDD2E7 /* Pods_Transactions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1759416A23C77B25E1BCE2A8 /* Pods_Transactions.framework */; };
 		488EE3A585A94DEAA8C24D3D /* Pods_TransactionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E987EEEE8B714BE1D5794E20 /* Pods_TransactionsTests.framework */; };
 /* End PBXBuildFile section */
@@ -29,10 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		010087FF1D80407500F1D4F8 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		010087FF1D80407500F1D4F8 /* TransactionsNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsNetwork.swift; sourceTree = "<group>"; };
 		011F259A1D8028DE00573871 /* Transactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		011F259D1D8028DE00573871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		011F259F1D8028DE00573871 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		011F259F1D8028DE00573871 /* TransactionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListViewController.swift; sourceTree = "<group>"; };
 		011F25A21D8028DE00573871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		011F25A41D8028DE00573871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		011F25A71D8028DE00573871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		011F25AE1D8028DE00573871 /* TransactionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		011F25B21D8028DE00573871 /* TransactionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTests.swift; sourceTree = "<group>"; };
 		011F25B41D8028DE00573871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0194032B1D80433600204A75 /* TransactionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsService.swift; sourceTree = "<group>"; };
+		0194032D1D8043F000204A75 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		0E45BB21CDB1B6BF305528E6 /* Pods-TransactionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionsTests/Pods-TransactionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		1759416A23C77B25E1BCE2A8 /* Pods_Transactions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transactions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D6A68B24498681D4D45D5C /* Pods-TransactionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionsTests/Pods-TransactionsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,8 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				011F259D1D8028DE00573871 /* AppDelegate.swift */,
-				010087FF1D80407500F1D4F8 /* Network.swift */,
-				011F259F1D8028DE00573871 /* TransactionsViewController.swift */,
+				010087FF1D80407500F1D4F8 /* TransactionsNetwork.swift */,
+				0194032B1D80433600204A75 /* TransactionsService.swift */,
+				0194032D1D8043F000204A75 /* Transaction.swift */,
+				011F259F1D8028DE00573871 /* TransactionsListViewController.swift */,
 				011F25A11D8028DE00573871 /* Main.storyboard */,
 				011F25A41D8028DE00573871 /* Assets.xcassets */,
 				011F25A61D8028DE00573871 /* LaunchScreen.storyboard */,
@@ -331,9 +337,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011F25A01D8028DE00573871 /* TransactionsViewController.swift in Sources */,
+				011F25A01D8028DE00573871 /* TransactionsListViewController.swift in Sources */,
 				011F259E1D8028DE00573871 /* AppDelegate.swift in Sources */,
-				010088001D80407500F1D4F8 /* Network.swift in Sources */,
+				0194032C1D80433600204A75 /* TransactionsService.swift in Sources */,
+				010088001D80407500F1D4F8 /* TransactionsNetwork.swift in Sources */,
+				0194032E1D8043F000204A75 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
