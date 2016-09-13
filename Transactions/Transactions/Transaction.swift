@@ -8,15 +8,12 @@
 
 import Foundation
 
-
-
 class Transaction {
+    
     var amount : Double = 0
-    var authorisation_date : String = ""
+    var authorisation_date : NSDate?
     var description : String = ""
-  //  var location : Dictionary = [String : String]()
     var post_transaction_balance : Double = 0
-    var settlement_date : String = ""
-    
-    
+    var settlement_date : NSDate?
+    var dateOnly : NSDate?
 }

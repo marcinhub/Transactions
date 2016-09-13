@@ -10,31 +10,22 @@
 import Foundation
 import Alamofire
 
-
 struct Network {
     
-    
-    
     func download(completion:(([[String: AnyObject]]?, error: NSError?) -> ())) {
-        
         
         Alamofire.request(.GET, "http://private-710eeb-lootiosinterview.apiary-mock.com/transactions")
             .responseJSON { response in switch response.result {
                 
             case .Success(let JSON):
                 
-                print("Success with JSON: \(JSON)")
-                
                 completion(JSON as? [[String : AnyObject]], error: nil)
                 
                 
             case .Failure(let error):
-                
-                print("Request failed with error: \(error)")
-                
+                                
                 completion(nil, error: error)
-                }
+            }
         }
-        
     }
 }

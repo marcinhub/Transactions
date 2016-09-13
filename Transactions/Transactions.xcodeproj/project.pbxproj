@@ -16,6 +16,10 @@
 		011F25B31D8028DE00573871 /* TransactionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F25B21D8028DE00573871 /* TransactionsTests.swift */; };
 		0194032C1D80433600204A75 /* TransactionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194032B1D80433600204A75 /* TransactionsService.swift */; };
 		0194032E1D8043F000204A75 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194032D1D8043F000204A75 /* Transaction.swift */; };
+		019403301D80C80C00204A75 /* String+DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194032F1D80C80C00204A75 /* String+DateHelper.swift */; };
+		0198CD3A1D8777130012AD97 /* TransactionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198CD391D8777130012AD97 /* TransactionParser.swift */; };
+		0198CD3D1D8779DE0012AD97 /* NSDate+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198CD3C1D8779DE0012AD97 /* NSDate+Helpers.swift */; };
+		0198CD3F1D877A9A0012AD97 /* NSDateFormatter+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198CD3E1D877A9A0012AD97 /* NSDateFormatter+Helpers.swift */; };
 		3F0AE2372CF0B069FBEDD2E7 /* Pods_Transactions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1759416A23C77B25E1BCE2A8 /* Pods_Transactions.framework */; };
 		488EE3A585A94DEAA8C24D3D /* Pods_TransactionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E987EEEE8B714BE1D5794E20 /* Pods_TransactionsTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +48,10 @@
 		011F25B41D8028DE00573871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0194032B1D80433600204A75 /* TransactionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsService.swift; sourceTree = "<group>"; };
 		0194032D1D8043F000204A75 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		0194032F1D80C80C00204A75 /* String+DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DateHelper.swift"; sourceTree = "<group>"; };
+		0198CD391D8777130012AD97 /* TransactionParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionParser.swift; sourceTree = "<group>"; };
+		0198CD3C1D8779DE0012AD97 /* NSDate+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Helpers.swift"; sourceTree = "<group>"; };
+		0198CD3E1D877A9A0012AD97 /* NSDateFormatter+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateFormatter+Helpers.swift"; sourceTree = "<group>"; };
 		0E45BB21CDB1B6BF305528E6 /* Pods-TransactionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionsTests/Pods-TransactionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		1759416A23C77B25E1BCE2A8 /* Pods_Transactions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Transactions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D6A68B24498681D4D45D5C /* Pods-TransactionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransactionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransactionsTests/Pods-TransactionsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +106,8 @@
 				011F259D1D8028DE00573871 /* AppDelegate.swift */,
 				010087FF1D80407500F1D4F8 /* TransactionsNetwork.swift */,
 				0194032B1D80433600204A75 /* TransactionsService.swift */,
+				0198CD391D8777130012AD97 /* TransactionParser.swift */,
+				0198CD3B1D8779CD0012AD97 /* Helpers */,
 				0194032D1D8043F000204A75 /* Transaction.swift */,
 				011F259F1D8028DE00573871 /* TransactionsListViewController.swift */,
 				011F25A11D8028DE00573871 /* Main.storyboard */,
@@ -115,6 +125,16 @@
 				011F25B41D8028DE00573871 /* Info.plist */,
 			);
 			path = TransactionsTests;
+			sourceTree = "<group>";
+		};
+		0198CD3B1D8779CD0012AD97 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0194032F1D80C80C00204A75 /* String+DateHelper.swift */,
+				0198CD3C1D8779DE0012AD97 /* NSDate+Helpers.swift */,
+				0198CD3E1D877A9A0012AD97 /* NSDateFormatter+Helpers.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		A052601B63AB4D2809C4F749 /* Frameworks */ = {
@@ -341,7 +361,11 @@
 				011F259E1D8028DE00573871 /* AppDelegate.swift in Sources */,
 				0194032C1D80433600204A75 /* TransactionsService.swift in Sources */,
 				010088001D80407500F1D4F8 /* TransactionsNetwork.swift in Sources */,
+				0198CD3D1D8779DE0012AD97 /* NSDate+Helpers.swift in Sources */,
+				019403301D80C80C00204A75 /* String+DateHelper.swift in Sources */,
+				0198CD3F1D877A9A0012AD97 /* NSDateFormatter+Helpers.swift in Sources */,
 				0194032E1D8043F000204A75 /* Transaction.swift in Sources */,
+				0198CD3A1D8777130012AD97 /* TransactionParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
