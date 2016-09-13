@@ -56,13 +56,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="transactionTitleLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEN-zU-byY" colorLabel="IBBuiltInLabel-Red">
-                                                    <rect key="frame" x="20" y="12.5" width="143" height="18"/>
+                                                    <rect key="frame" x="20" y="12" width="143" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.65338585138320915" green="0.65338585138320915" blue="0.65338585138320915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcY-O9-iZE">
-                                                    <rect key="frame" x="540" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="523" y="11" width="65" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="65" id="5gA-74-dtn"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.84444090136054417" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -72,9 +75,9 @@
                                             <constraints>
                                                 <constraint firstItem="BEN-zU-byY" firstAttribute="leading" secondItem="HR0-AJ-8VU" secondAttribute="leadingMargin" constant="12" id="5L7-hQ-x2D"/>
                                                 <constraint firstItem="BEN-zU-byY" firstAttribute="centerY" secondItem="HR0-AJ-8VU" secondAttribute="centerY" id="Jag-fI-6Ch"/>
-                                                <constraint firstItem="mcY-O9-iZE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BEN-zU-byY" secondAttribute="trailing" constant="10" id="K3j-mv-wSZ"/>
+                                                <constraint firstItem="mcY-O9-iZE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BEN-zU-byY" secondAttribute="trailing" constant="40" id="K3j-mv-wSZ"/>
                                                 <constraint firstItem="mcY-O9-iZE" firstAttribute="top" secondItem="HR0-AJ-8VU" secondAttribute="topMargin" constant="3" id="W9V-Y5-nWK"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="mcY-O9-iZE" secondAttribute="trailing" constant="10" id="cKz-if-rDY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mcY-O9-iZE" secondAttribute="trailing" constant="4" id="cKz-if-rDY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
